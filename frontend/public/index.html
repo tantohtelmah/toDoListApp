@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="../src/index.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>To-Do List </title>
+    <link rel="icon" href="to-do-list.png" type="image/x-icon">
+    <style>
+      .hidden-nav {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-local bg-cover bg-center text-amber-500">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  <nav id="navbar" class="navbar bg-gray-100" x-data="{ open: false }"  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <a href="#" class="flex-shrink-0 items-center">
+                    <img class="h-8 w-8" src="./images/to-do-list.png" alt="Logo">
+                </a>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
+                    <a href="index.html" class="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="http://127.0.0.1:5000/tasks/all" class="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tasks</a>
+                    <a href="http://127.0.0.1:5000/tags/all" class="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tag</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tips</a>
+                </div>
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                <a href="http://127.0.0.1:5000/users/add" class="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Sign In</a>
+            </div>
+            <div class="-mr-2 flex items-center sm:hidden">
+                <button @click="open = !open" type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg x-show="!open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="sm:hidden" x-show="open">
+        <div class="pt-2 pb-3 space-y-1 items-center">
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Tasks</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Tips</a>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <a href="http://127.0.0.1:5000/users/add" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Sign In</a>
+        </div>
+    </div>
+  </nav>
+
+    <!-- <div class="h-screen"></div>
+    <div class="h-screen"></div>
+    <div class="h-screen"></div> -->
+
+    <div class="flex flex-col max-w mx-auto bg-gray-500 rounded-xl shadow-md overflow-hidden md:max-w-2xl m-8 p-10 mt-2 h-1/2">
+      <div class="flex flex-col">
+        <div class="flex flex-col md:flex">
+          <div class="p-8">
+              <h1 class="text-3xl font-bold">Welcome Tantoh</h1>
+          </div>
+          <div class="p-8">
+            <h1 class="text-xl font-bold">Tuesday, 15th October 2024 <br> 16:00pm</h1>
+        </div>
+        <div>
+          <div class="md:flex flex flex-col">
+            <div class="flex flex-col m-4 mt-1 p-6 ">
+                <h1 class="text-2xl font-bold">Up coming Tasks</h1>
+                <div class="text-neutral-500">
+                  <div class="flex justify-left items-center max-w-2xl rounded-md bg-white shadow-md m-4 p-6 hover:bg-amber-400 hover:m-2">
+                    <h1><b>Task: Complete CIS6600 Assignment</b> <br> Description: Still left with backend to complete <br> Due date: 02/10/2024 <br> Status: Incomplete</h1> <br><br>
+                  </div>
+                  <div class="flex justify-left items-center max-w-2xl rounded-md bg-white shadow-md m-4 p-6 hover:bg-amber-400 hover:m-2">
+                    <h1><b>Task: Visit Lum</b> <br> Description: Sort the give away for the children fair in church <br> Due date: 24/10/2024 <br> Status: Pending</h1> <br><br>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="flex justify-center items-center m-4">
+      <button id="apiButton" class="bg-amber-400 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded " onclick="window.location.href='http://127.0.0.1:5000/tasks/add';">Add</button>
+    </nav>
+    <div class="trial"></div>
+    </div>
+
+    <script src="../src/index.js"></script>
+    <!-- <script src="/dist/bundle.js"></script>  -->
+    <!-- <script src="../src/App.js"></script> -->
+  </body>
+</html>
