@@ -1,27 +1,30 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client';
+// import ReactDOM from 'react-dom'
 import './index.css';
-import App from './App';
+// import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import AddTask from './components/tasks';
+import AddUser from './components/users';
 
 
 const toggleButton = document.querySelector('.toggle-button');
 const navbarLinks = document.querySelector('.navbar-links');
 
+// add task button
 document.getElementById('apiButton').addEventListener('click', () => {
-    if (AddTask()) {
-        alert("Api clicked");
-    } else {
-        alert("nope we are not there yet")
-    } 
+    root.render(<AddTask />);
+});
+
+// sign in link
+document.getElementById('signIn').addEventListener('click', () => {
+    root.render(<AddUser />);
 });
 
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
+// toggleButton.addEventListener('click', () => {
+//     navbarLinks.classList.toggle('active');
+// });
 
 document.addEventListener('alpine:init', () => {
   Alpine.data('menu', () => ({
@@ -48,17 +51,5 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 });
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-
+const root = createRoot(document.getElementById('root'));
+// root.render(<App />);

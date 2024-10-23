@@ -2,12 +2,13 @@
 """ holds class tags"""
 
 from sqlalchemy import Column, String, Integer
-from models.baseModel import BaseModel, Base
+from models.baseModel import BaseModel
+from models import db
 
-class Tags(BaseModel, Base):
+class Tags(BaseModel):
     __tablename__ = 'tags'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(128), nullable=False)
+    id = db.Column(Integer, primary_key=True)
+    name = db.Column(String(128), nullable=False)
     
     def __init__(self, name, *args, **kwargs):
         """ initializes Tags"""

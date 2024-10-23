@@ -5,19 +5,20 @@ Contains class BaseModel
 
 from datetime import datetime
 import uuid
-from sqlalchemy import Column, String, DateTime
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, String, DateTime, inspect
+from flask_sqlalchemy import SQLAlchemy
 
-Base = declarative_base()
+db = SQLAlchemy()
 
-class BaseModel(Base):
+class BaseModel(db.Model):
     """The BaseModel class from which future classes will be derived"""
     __abstract__ = True  # Ensure this class is not mapped to a table
-    id = Column(String(60), primary_key=True, default=str(uuid.uuid4()))
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow)
+    id = db.Column(db.String(60), primary_key=True, default=lambda: str(uuid.uuid4()))
+    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
+    updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
     
     def __init__(self, *args, **kwargs):
+        
         if kwargs:
             for key, value in kwargs.items():
                 if key != "__class__":
@@ -63,3 +64,4 @@ class BaseModel(Base):
         session = Session()
         session.delete(self)
         session.commit()
+    

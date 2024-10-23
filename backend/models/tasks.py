@@ -2,15 +2,16 @@
 """ holds class tasks"""
 
 from sqlalchemy import Column, Enum, String, Date
-from models.baseModel import BaseModel, Base
+from models.baseModel import BaseModel
+from models import db
 
-class Tasks(BaseModel, Base):
+class Tasks(BaseModel):
     __tablename__ = 'tasks'
-    name = Column(String(128), nullable=False)
-    title = Column(String(128), nullable=False)
-    description = Column(String(1024), nullable=False)
-    due_date = Date
-    status = Column(
+    name = db.Column(String(128), nullable=False)
+    title = db.Column(String(128), nullable=False)
+    description = db.Column(String(1024), nullable=False)
+    due_date = db.Column(db.Date, nullable=True)
+    status = db.Column(
         Enum('pending', 'in_progress', 'completed', name='status_enum'),
         default='pending',
         nullable=False

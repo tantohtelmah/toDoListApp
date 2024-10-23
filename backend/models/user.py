@@ -1,17 +1,17 @@
 #!/usr/bin/python
 """ holds class user"""
 
-
 from sqlalchemy import Column, String, Integer
-from models.baseModel import BaseModel, Base
+from models.baseModel import BaseModel
+from models import db
 
-class User(BaseModel, Base):
+class User(BaseModel):
    __tablename__ = 'user'
-   id = Column(Integer, primary_key=True)
-   email = Column(String(128), nullable=False)
-   password = Column(String(128), nullable=False)
-   first_name = Column(String(128), nullable=True)
-   last_name = Column(String(128), nullable=True)
+   id = db.Column(Integer, primary_key=True)
+   email = db.Column(String(128), nullable=False)
+   password = db.Column(String(128), nullable=False)
+   first_name = db.Column(String(128), nullable=True)
+   last_name = db.Column(String(128), nullable=True)
    
    
    def __init__(self, name, email, password, first_name, last_name, *args, **kwargs):

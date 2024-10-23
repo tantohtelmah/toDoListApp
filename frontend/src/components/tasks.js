@@ -9,10 +9,11 @@ function AddTask() {
   const [description, setDescription] = useState('');
   const [dueDate, setDueDate] = useState('');
   const [status, setStatus] = useState('pending');
-  const history = useNavigate();
+  // const history = useNavigate();
 
   const handleSubmit = async (e) => {
       e.preventDefault();
+      console.log("Handling...")
       if (!name || !title || !description || !dueDate) {
         alert('Please fill in all required fields.');
         return;
@@ -20,16 +21,16 @@ function AddTask() {
       const data = { name, title, description, due_date: dueDate, status };
 
       try {
-        const response = await axios.post('/tasks/add', {
-            //   method: 'POST',
+        const response = await axios.post('http://localhost:5000/tasks/add', data, {
+              method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
               },
               body: JSON.stringify(data),
           });
+          console.log("Handling here...");
     
-          if (response.status === 200) {
-              history('/path');
+          if (response.status === 201) {
               alert('Task added successfully!');
           } else {
             alert('Failed to add task.');

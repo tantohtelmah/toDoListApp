@@ -2,24 +2,28 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 const AddUser = () => {
-  const [user, setUser] = useState({
-    email: '',
-    password: '',
-    first_name: '',
-    last_name: ''
-  });
+    const [email, setName] = useState('');
+    const [password, setTitle] = useState('');
+    const [first_name, setDescription] = useState('');
+    const [last_name, setDueDate] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser(prevUser => ({ ...prevUser, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.post('/users/add', {
+    console.log("Handling...")
+      if (!email || password || first_name || last_name) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      const data = { email, password, first_name, last_name };
+    await axios.post('http://localhost:5000/user/add', data, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
       },
       body: JSON.stringify(user),
     })

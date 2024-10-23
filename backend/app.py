@@ -1,28 +1,38 @@
+from datetime import datetime
 from flask import Flask, jsonify, render_template, request, send_from_directory
-from db import db
-from models import BaseModel, Tags, Tasks, User
-from routes.tags import tag_bp
-from routes.tasks import task_bp
-from routes.users import user_bp
+from models import BaseModel, db, Tags, Tasks, User
+from flask_cors import CORS
+# To create tables
+from sqlalchemy import Column, Date, Enum, String, Integer
 
 app = Flask(__name__, template_folder='/frontend/public')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'
+CORS(app, resources={r"/*": {"origins": "*"}})
+app.config['INSTANCE_PATH'] = '../instance/'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 db.init_app(app)
 
+        
 with app.app_context():
     db.create_all()
-    
+    print(db)
     
 # @app.route('/')
 # def index():
 #     render_template('index.html')
 
-
-
 # tasks
+def validate_date(date_str):
+    try:
+        due_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+        return due_date
+    except ValueError:
+        raise ValueError("Invalid date format. Use YYYY-MM-DD.")
+    
+    
+
 @app.route('/tasks/add', methods=['POST'])
 def add_tasks():
     try:
@@ -30,7 +40,9 @@ def add_tasks():
         name = data.get('name')
         title = data.get('title')
         description = data.get('description')
-        due_date = data.get('due_date')
+        due_date_str = data['due_date']
+        validate_date(due_date_str)
+        due_date = datetime.strptime(due_date_str, "%Y-%m-%d").date()
         status = data.get('status', 'pending')
 
         if not name or not title or not description:
@@ -107,16 +119,14 @@ def add_tag():
     
     return jsonify(new_tag.to_dict()), 201
 
-@app.route('/tag/all', methods=['GET'])
+@app.route('/tags/all', methods=['GET'])
 def get_all_tags():
     tags = Tags.query.all()
     return jsonify([tag.to_dict() for tag in tags])
 
-
 # app.register_blueprint(tag_bp)
 # # app.register_blueprint(task_bp)
 # app.register_blueprint(user_bp)
-
 
 
 if __name__ == '__main__':
