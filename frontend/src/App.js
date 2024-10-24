@@ -1,29 +1,30 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AddTag from './components/tags';
-import AddTask from './components/tasks';
-import TaskList from './components/task_list'
-import AddUser from './components/users';
-// import Home from './components/home';
+
+// Routes
+import Navbar from './components/navigation';
+import Home from './pages/home';
+import AddUser from './pages/users';
+import AddTask from './pages/tasks';
+
+import AddTag from './pages/tags';
+import TaskList from './pages/task_list'
 import { Link } from 'react-router-dom';
-import TagList from './components/tag_lists';
-import UserList from './components/user_lists';
+import TagList from './pages/tag_lists';
+import UserList from './pages/user_profile';
 
 
 const App = () => {
-  return (
-    <Router>
-        <div>
-          <h1>Data Management</h1>
-          
-          <AddTag />
-          <AddUser />
-          <TaskList />
-          <TagList />
-          <UserList />
-      </div>
-    </Router>
-)
-};
+	return (
+	  <Router>
+		<Navbar />
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/tasks/add" element={<AddTask />} />
+			<Route path="/users/add" element={<AddUser />} />
+		</Routes>
+	  </Router>
+	);
+  }
 
 export default App;

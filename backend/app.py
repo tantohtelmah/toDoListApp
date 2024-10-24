@@ -58,10 +58,20 @@ def add_tasks():
         db.session.add(new_task)
         db.session.commit()
 
-        return jsonify(new_task.to_dict()), 201
+        return jsonify({"id": new_task.id, **new_task.to_dict()}), 201
     except Exception as e:
         print("Error:", e)
         return jsonify({"error": "An error occurred"}), 500
+    
+
+@app.route('/users/<string:user_email>/tasks', methods=['PUT'])
+def add_task_to_user(user_email):
+    user = User.query.get(user_email)
+    data = request.json
+    task = Tasks.query.get(data['task_id'])
+    user.tasks.append(task)
+    db.session.commit()
+    return jsonify({'message': 'Task added to user'}), 200
 
 @app.route('/tasks/all', methods=['GET'])
 def get_all_tasks():

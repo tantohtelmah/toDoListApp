@@ -1,55 +1,71 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './App'
 // import ReactDOM from 'react-dom'
-import './index.css';
+import './styles/index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
-import AddTask from './components/tasks';
-import AddUser from './components/users';
+import AddTask from './pages/tasks';
+import AddUser from './pages/users';
 
 
-const toggleButton = document.querySelector('.toggle-button');
-const navbarLinks = document.querySelector('.navbar-links');
 
-// add task button
-document.getElementById('apiButton').addEventListener('click', () => {
-    root.render(<AddTask />);
-});
+// Home link
+const root = createRoot(document.getElementById('root'));
 
-// sign in link
-document.getElementById('signIn').addEventListener('click', () => {
-    root.render(<AddUser />);
-});
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
 
 
-// toggleButton.addEventListener('click', () => {
-//     navbarLinks.classList.toggle('active');
+
+
+
+
+// const toggleButton = document.querySelector('.toggle-button');
+// const navbarLinks = document.querySelector('.navbar-links');
+
+// // add task button
+// document.getElementById('apiButton').addEventListener('click', () => {
+//     root.render(<AddTask />);
 // });
 
-document.addEventListener('alpine:init', () => {
-  Alpine.data('menu', () => ({
-      open: false,
-      toggle() {
-          this.open = !this.open;
-      }
-  }));
-});
+// // sign in link
+// document.getElementById('signIn').addEventListener('click', () => {
+//     root.render(<AddUser />);
+// });
 
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
 
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// // toggleButton.addEventListener('click', () => {
+// //     navbarLinks.classList.toggle('active');
+// // });
 
-    if (scrollTop > lastScrollTop) {
-        // Scroll down
-        navbar.classList.add('hidden-nav');
-    } else {
-        // Scroll up
-        navbar.classList.remove('hidden-nav');
-    }
-    lastScrollTop = scrollTop;
-});
+// document.addEventListener('alpine:init', () => {
+//   Alpine.data('menu', () => ({
+//       open: false,
+//       toggle() {
+//           this.open = !this.open;
+//       }
+//   }));
+// });
 
-const root = createRoot(document.getElementById('root'));
-// root.render(<App />);
+// let lastScrollTop = 0;
+// const navbar = document.getElementById('navbar');
+
+// window.addEventListener('scroll', () => {
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+//     if (scrollTop > lastScrollTop) {
+//         // Scroll down
+//         navbar.classList.add('hidden-nav');
+//     } else {
+//         // Scroll up
+//         navbar.classList.remove('hidden-nav');
+//     }
+//     lastScrollTop = scrollTop;
+// });
+
+// const root = createRoot(document.getElementById('root'));
+// // root.render(<App />);

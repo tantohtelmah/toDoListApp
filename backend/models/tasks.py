@@ -26,3 +26,4 @@ class Tasks(BaseModel):
         self.due_date = due_date
         self.status = status
         super().__init__(*args, **kwargs)
+
