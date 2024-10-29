@@ -18,6 +18,7 @@ function UserProfile() {
                 .then(data => {
                     if (data.success) {
                         setUser(data.user);
+                        alert("Successfully added a user")
                     } else {
                         setError(data.message);
                     }

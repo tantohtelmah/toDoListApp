@@ -7,7 +7,6 @@ from models import db
 
 class Tags(BaseModel):
     __tablename__ = 'tags'
-    id = db.Column(Integer, primary_key=True)
     name = db.Column(String(128), nullable=False)
     
     def __init__(self, name, *args, **kwargs):

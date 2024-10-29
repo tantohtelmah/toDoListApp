@@ -1,0 +1,1310 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:12] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:12] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:15] "OPTIONS /users/add HTTP/1.1" 200 -
+ERROR:root:Error: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO user (email, password, first_name, last_name, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tantohtelmah@gmail.com', 'rthsr', 'Telmah', 'Tantoh', '7e1299b2-b4d3-4b43-a070-9edd6d66640f', '2024-10-28 16:54:15.589918', '2024-10-28 16:54:15.589918')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:15] "[35m[1mPOST /users/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:32] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:32] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:38] "OPTIONS /users/add HTTP/1.1" 200 -
+ERROR:root:Error: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO user (email, password, first_name, last_name, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tantohtelmah@gmail.com', 'rthsr', 'Telmah', 'Tantoh', '88ea214e-df1f-4f40-b3f7-a6842a0e74e5', '2024-10-28 16:54:39.261604', '2024-10-28 16:54:39.261604')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:39] "[35m[1mPOST /users/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:53] "[35m[1mGET /main.3f592fe83307916f99db.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:54:54] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:55:11] "OPTIONS /users/add HTTP/1.1" 200 -
+ERROR:root:Error: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO user (email, password, first_name, last_name, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tantohtelmah@gmail.com', 'rthsr', 'Telmah', 'Tantoh', '4110b7c7-b6cc-49da-be28-50f7a64d6963', '2024-10-28 16:55:11.912003', '2024-10-28 16:55:11.912003')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:55:11] "[35m[1mPOST /users/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:02] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:02] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:14] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:15] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:15] "OPTIONS /users/${userId}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:15] "[35m[1mPUT /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 12:56:23] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:05] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:05] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:05] "OPTIONS /users/${userId}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:05] "[35m[1mPUT /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:17:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:19:10] "[35m[1mGET /main.2e06af1e07fafad3be14.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:27:01] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:27:01] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:27:58] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:27:58] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:06] "OPTIONS /users/add HTTP/1.1" 200 -
+ERROR:root:Error: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO user (email, password, first_name, last_name, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tantohtelmah@gmail.com', 'rthsr', 'Telmah', 'Tantoh', '8e03ae4c-5731-4a2b-86c3-9e5579741851', '2024-10-28 17:28:07.110557', '2024-10-28 17:28:07.110557')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:07] "[35m[1mPOST /users/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:11] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:42] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:28:42] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:29:50] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:29:50] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:50] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:50] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:50] "OPTIONS /users/${userId}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:35:51] "[35m[1mPUT /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:38:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:38:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:38:50] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:38:50] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:31] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:31] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:31] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:47] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:47] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:47] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:47] "[35m[1mGET /tasks/by_lastname/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:41:47] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:42:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:42:00] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:42:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:50:15] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:10] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:10] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:10] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:52:20] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:57:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:57:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:57:33] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 13:58:23] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:03:37] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:04:49] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:05:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:05:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:05:09] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:08] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:08] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:09] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:14] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:19] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:19] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:19] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:34] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:34] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:12:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:13:36] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:18] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:34] "[35m[1mGET /main.471b6695c73d7ee9d063.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:35] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:14:37] "[35m[1mGET /main.471b6695c73d7ee9d063.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:16:05] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:17:16] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:17:56] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:18:00] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:20:36] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:20:39] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:21:27] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:21:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:21:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:21:47] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:22:11] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:23:26] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:25:11] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:25:12] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:25:15] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:25:55] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:26:12] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:31:35] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:31:35] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:31:35] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:32:00] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:32:02] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:32:05] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:06] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:07] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:07] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:33] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:33:35] "[35m[1mGET /main.64bbbb15459db732b4f1.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:34:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:36:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:40:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:40:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:43:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:43:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:44:19] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:47:07] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:47:20] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:49:40] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:50:29] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:50:36] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:56:25] "[35m[1mGET /main.8279ee997dcdbaca270a.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:56:25] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:59:13] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 14:59:25] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:00:38] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:01] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:40] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:41] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:52] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:52] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:01:52] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:03:46] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:03:46] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:03:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:03:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:04:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:04:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:04:01] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:07:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:52] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:52] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:53] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:57] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:58] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:08:58] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:00] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:04] "[31m[1mPOST /tags/add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:09:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:10:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:23:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:23:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:26:58] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:27:10] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:27:49] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:29:20] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:31:15] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:32:47] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:32:52] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:37:56] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:37:56] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:02] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:39] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:38:40] "[35m[1mGET /main.9d53d44e19f1d582288c.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:39:07] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:39:35] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:39:55] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:40:11] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:40:11] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:40:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:40:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:40:25] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:42:16] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:42:16] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:44:37] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:44:38] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:45:10] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:45:20] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:45:20] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:46:27] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:46:27] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:49:44] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:49:45] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:52:45] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:52:45] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:52:51] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:52:51] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:02] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:03] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:39] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:39] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:42] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:43] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:53:47] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:54:31] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 15:54:32] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:00:54] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:00:55] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:06:31] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:06:31] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:06:31] "OPTIONS /users/${userId}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:06:32] "[35m[1mPUT /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:21:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:23:07] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:24:43] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:24:48] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:25:41] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:25:41] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:43] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:43] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:50] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:50] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:50] "OPTIONS /users/${userId}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:50] "[35m[1mPUT /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:26:55] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:27:45] "[35m[1mGET /users/${userId}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:32] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:33] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:43] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:43] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:43] "OPTIONS /users/${userEmail}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 16:47:43] "[35m[1mPUT /users/${userEmail}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:29:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:29:36] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:29:47] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:29:48] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:30:16] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:31:46] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:31:47] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:31:53] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:31:53] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:32:22] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:32:23] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:32:28] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:33] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:34] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:43] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:43] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:43] "OPTIONS /users/${userEmail}/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:44] "[35m[1mPUT /users/${userEmail}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:50] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:36:58] "[35m[1mGET /users/${userEmail}/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:29] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:29] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:40] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:40] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:52] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:39:52] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:44:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:44:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:00] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:03] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:04] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:04] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:33] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:33] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:33] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:34] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:34] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:41] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:45:42] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:10] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:10] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:11] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:19] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:19] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:46:21] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:47:12] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:47:12] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:39] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:39] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:39] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:48] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:48] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:53] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:50:54] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:51:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:51:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:51:15] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:51:15] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:51:19] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:15] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:15] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:16] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:19] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:19] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:19] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:51] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:51] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:51] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:53] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:54] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:54] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:54] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:54] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:52:54] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:53:32] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:53:32] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:53:32] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:51] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:51] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:51] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:55] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:55] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 17:59:55] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:47] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:47] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:48] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:52] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:52] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:52] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:53] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:53] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:53] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:56] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:56] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:00:56] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:00] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:00] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:00] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:10] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:10] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:10] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:11] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:11] "[35m[1mGET /tasks/by_lastname/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:18] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:28] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:28] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:01:35] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:03:54] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:03:54] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:02] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:02] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:37] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:37] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:37] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:48] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:49] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:04:52] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:05:22] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:05:22] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:06:45] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:06:45] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:06:46] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:21] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:21] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:23] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:23] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:27] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:10:27] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:18] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:18] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:30] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:30] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:37] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:39] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:39] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:40] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:40] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:43] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:43] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:44] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:44] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:51] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:52] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:56] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:11:56] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:01] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:01] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:02] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:02] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:54] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:12:54] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:20] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:20] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:36] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:50] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:14:51] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:13] "[35m[1mGET /main.361922e558b6289c77a9.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:14] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:15] "[35m[1mGET /main.361922e558b6289c77a9.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:28] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:15:37] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:15] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:17] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:20] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:23] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:33] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:16:46] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:05] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:11] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:11] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:16] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:16] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:17:16] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:17] "[35m[1mGET /tasks/by_lastname/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:34] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:34] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:34] "[35m[1mGET /tasks/by_lastname/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:34] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:18:34] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:30] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:30] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:30] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:49] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:19:57] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:17] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:18] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:29] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:37] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:40] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:22:45] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:19] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:21] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:39] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:40] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:45] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:45] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:23:59] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:24:00] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:24:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:24:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:02] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:02] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:05] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:18] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:18] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:25:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:28:24] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:28:24] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:29:12] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:29:18] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:29:18] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:29:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:29:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:35:09] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:35:09] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:35:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 18:35:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 19:51:46] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:00:19] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:00:20] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:00:26] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:00:26] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:02] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:06] "[35m[1mGET /main.2a7329e5c9c823053ff3.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:11] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:11] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:29] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:01:29] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:02:04] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:02:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:02:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:02:29] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:02:30] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:06:32] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:06:33] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:06:44] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:06:45] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:07:30] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:07:31] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:12:30] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:12:30] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:12:36] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:12:36] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:18:36] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:18:36] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:18:40] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:18:40] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:19:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:19:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:20:00] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:20:01] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:21:28] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:21:28] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:21:37] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:21:37] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:22:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:22:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:23:59] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:26:51] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:27:56] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:28:21] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:28:30] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:28:30] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:28:58] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:17] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:21] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:23] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:54] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:54] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:29:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:31:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:31:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:20] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:31] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:31] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:33:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:34:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:34:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:34:35] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:35:08] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:35:08] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:39:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:39:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:39:59] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:39:59] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:41:26] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:41:26] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:41:58] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:42:06] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:42:06] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:42:59] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:08] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:11] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:18] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:18] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:39] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:43:39] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:01] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:01] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:08] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:08] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:08] "OPTIONS /users/undefined/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:45:09] "[35m[1mPUT /users/undefined/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:49:45] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:50:42] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:50:42] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:50:59] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:50:59] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:51:06] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:51:35] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:51:35] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:51:56] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:51:56] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:08] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:08] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:19] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:20] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:46] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:46] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:46] "OPTIONS /users/9b368caf-edc4-4499-a59b-6031b4128b8a/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:55:47] "PUT /users/9b368caf-edc4-4499-a59b-6031b4128b8a/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:56:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:56:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:37] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:52] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:52] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 20:58:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:01:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:01:41] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:01:56] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:01:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:02:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:02:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:02:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:02:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:03:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:03:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:05:55] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:05:55] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:05:55] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:51] "[35m[1mGET /main.1f1a5848fd1afd3b2085.hot-update.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:06:52] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:07:28] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:07:28] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:07:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:07:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:08:53] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:08:53] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:08:53] "OPTIONS /users/9279adb6-50ae-46b7-8a46-f7981479a68b/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:08:54] "PUT /users/9279adb6-50ae-46b7-8a46-f7981479a68b/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:09:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:09:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:09:57] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:09:57] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:09:57] "[35m[1mGET /tasks/by_lastname/${lastName} HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:42] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:42] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:46] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:51] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:53] "[35m[1mGET /tasks/by_lastname/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:53] "[35m[1mGET /tasks/by_lastname/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:20:53] "[35m[1mGET /tasks/by_lastname/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:21:42] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:21:42] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:21:42] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:21:42] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:53] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:22:54] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:23:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:41] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:45] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:24:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:35] "[35m[1mGET /tasks/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:35] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:45] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:55] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:25:59] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:44] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:45] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:45] "OPTIONS /users/undefined/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:45] "[35m[1mPUT /users/undefined/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:26:51] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:31:04] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:31:08] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:32:47] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:35:33] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:36:52] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:36:52] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:37:08] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:37:09] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:38:20] "[35m[1mGET /users/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:38:20] "[35m[1mGET /users/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:39:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:39:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:39:05] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:40:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:40:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:40:36] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:42:48] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:43:21] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:45:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:45:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:47:18] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:47:26] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:47:31] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:48:02] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:50:01] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:50:13] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:50:24] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:50:32] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:50:36] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:52:07] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:52:07] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:52:07] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:52:16] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:57:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:57:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:58:33] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:58:33] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:58:33] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 21:58:41] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/models/tags.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug: * Detected change in '/home/kinyuy/toDoListApp/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:03:52] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:03:52] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:03:53] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:04] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:28] "[35m[1mGET /tags/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:29] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:29] "[35m[1mGET /tags/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:04:33] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:05:53] "[35m[1mGET /images/to-do-list.pn HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:13] "[35m[1mGET /frontend HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:14] "[35m[1mGET /frontend/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:21] "[35m[1mGET /frontend/public HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:22] "[35m[1mGET /frontend/public/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:24] "[35m[1mGET /frontend/public/images/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:29] "[35m[1mGET /frontend/public/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:31] "[35m[1mGET /frontend/public/images/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:32] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:49] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:06:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:07:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:07:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:07:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:07:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:15] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:18] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:27] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:37] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:40] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:12:42] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:38] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:43] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:48] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:13:49] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:14:31] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:15:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:15:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:15:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:15:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:06] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:07] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:14] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:20] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:21] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:21] "OPTIONS /users/fba124d1-eb1f-4b83-890a-8dc4094ea884/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:21] "PUT /users/fba124d1-eb1f-4b83-890a-8dc4094ea884/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:16:36] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:02] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:30] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:33] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:17:57] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:18:10] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:13] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:16] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:34] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:39] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:41] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:44] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:19:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:20:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:20:07] "[35m[1mGET /tasks/edit/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:20:24] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:20:25] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:21:32] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:21:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:21:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:21:36] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:06] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:10] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:10] "[35m[1mGET /tasks/manifest.json HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:22:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:23:04] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:23:05] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:23:16] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:23:17] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:23:52] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:06] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:19] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:21] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:26] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:24:35] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:01] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:03] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:45] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:55] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:25:56] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:26:46] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:26:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:27:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:27:00] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:30:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:30:23] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:31:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:31:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:32:31] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:32:39] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:32:40] "[35m[1mPOST /tags/add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:08] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:11] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-142-760
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:50] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:33:51] "[35m[1mGET /icon-192x192.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:34:09] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:34:10] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:34:10] "OPTIONS /users/undefined/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:34:10] "[35m[1mPUT /users/undefined/tasks HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:38:50] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:38:50] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:39:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:39:51] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:41:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:41:20] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:43:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:43:36] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:07] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:23] "OPTIONS /users/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:23] "[35m[1mPOST /users/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:28] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:29] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:42] "OPTIONS /tasks/add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:43] "[35m[1mPOST /tasks/add HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:43] "OPTIONS /users/8bb17842-0e18-4e15-a983-1e0ab4875578/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:43] "PUT /users/8bb17842-0e18-4e15-a983-1e0ab4875578/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:47] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:53] "[35m[1mDELETE /tasks/delete/afd15a35-ed70-44ab-8f8d-93a2c40a5731 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:44:58] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:45:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:45:09] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:49:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:49:22] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:49:25] "[35m[1mGET /tags/to-do-list.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:50:12] "GET /tasks/all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Oct/2024 22:50:13] "GET /tasks/all HTTP/1.1" 200 -

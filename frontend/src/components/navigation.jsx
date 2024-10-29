@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { useContext } from 'react';
-// import { AuthContext } from './auth-context';
+import { useContext } from 'react';
+import { UserContext } from '../components/user_context';
 
 const Navbar = () => {
 
-  // const { user, isLoggedIn } = useContext(AuthContext);
+  const { user, setUser } = useContext(UserContext);
 
   return (
     <nav id="navbar" className="navbar bg-gray-100">
@@ -16,18 +16,19 @@ const Navbar = () => {
               {/* Left side of Navbar */}
               <div className='flex items-center'>
                 <Link to="/" className="flex-shrink-0 items-center">
-                  <img src="./images/to-do-list.png" className="h-8 w-8 object-contain" alt="Logo" />
+                  <img src="../images/to-do-list.png" className="h-8 w-8 object-contain" alt="Logo" />
                 </Link>
                 <Link to="/" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                <Link to="/tasksList" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tasks</Link>
-                <Link to="/tagsList" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tags</Link>
+                <Link to="/tasks/all" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tasks</Link>
+                <Link to="/tags/add" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tags</Link>
                 <Link to="/tips" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tips</Link>
-                <Link to="/calender" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Calender</Link>
-                <Link to="/user" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Tasks</Link>
+                <Link to="/calendar" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Calendar</Link>
               </div>
               {/* Right side of Navbar */}
               <div className='flex items-center'>
-                <Link to="/users/add" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Sign Up</Link>
+              {user && user.last_name ? (<span>Welcome, {user.last_name}</span>) : (
+                <Link to="/users/add" className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium"><button>Sign Up</button></Link>
+              )}
               </div>
                 {/* {isLoggedIn ? (
                   <span className="text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">
